@@ -1,0 +1,18 @@
+update_number: 0327
+platform_version: 4.4.0
+platform_name: wilkes
+applies_to: appm-1.2.0, am-2.0.0
+bug_fixes:
+  N/A: N/A
+description: |-
+  This update introduces several improvements to the XML Signature Wrapping(XSW) mitigation mechanisms and SAML Assertion's expiry validation related to Federated SAML SSO Authenticator.
+
+  This update also introduces the following properties to <CARBON_SERVER>/repository/conf/identity/application-authentication.xml
+
+  VerifyAssertionValidityPeriod - Enable/disable the expiry validation of SAML Assertion.
+  TimestampSkew - Defines the clock skew (in seconds) to be used in SAML Assertion's validity period check. By default it is set to 300 seconds (i.e. 5 minutes)
+file_changes:
+  added_files: []
+  removed_files: []
+  modified_files:
+  - repository/components/plugins/org.wso2.carbon.identity.application.authenticator.samlsso_5.1.1.jar
